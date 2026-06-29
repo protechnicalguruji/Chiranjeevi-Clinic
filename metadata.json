@@ -1,0 +1,6 @@
+{
+  "name": "Chiranjeevi Clinic",
+  "description": "Trusted General Physician in Indore - Dr. Karan Singh Bais, MD Medicine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
