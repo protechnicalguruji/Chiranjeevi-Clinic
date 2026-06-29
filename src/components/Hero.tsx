@@ -45,7 +45,7 @@ export default function Hero() {
           >
             <div className="aspect-square bg-slate-200 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white ring-4 ring-primary/10">
               <img 
-                src="/src/assets/images/dr-karan-bais.png" 
+                src="/src/assets/images/https://drive.google.com/file/d/19y8INKSzAbNEZI3DfKZMNoKQ55ymFIIP/view?usp=sharing" 
                 alt="Dr. Karan Singh Bais" 
                 className="w-full h-full object-cover"
               />
