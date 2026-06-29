@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Phone, MessageSquare, MapPin, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
 
 export default function AppointmentPage() {
@@ -39,8 +40,38 @@ Thank you.`;
     window.location.href = `https://wa.me/918269457285?text=${encodeURIComponent(message)}`;
   };
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Karan Singh Bais",
+    "image": "https://ais-pre-ndkn2ios4csr5w7nzp7smn-893669360321.asia-east1.run.app/src/assets/images/doctor_portrait_1782728666510.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31, Opposite Atal Dwar, Kila Maidan Road, Khasgi Ka Bagicha",
+      "addressLocality": "Indore",
+      "addressRegion": "Madhya Pradesh",
+      "postalCode": "452015",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918269457285",
+    "openingHours": "Mo-Su 18:00-21:00",
+    "url": "https://ais-pre-ndkn2ios4csr5w7nzp7smn-893669360321.asia-east1.run.app"
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Book Your Appointment | Chiranjeevi Clinic - Dr. Karan Singh Bais</title>
+        <meta name="description" content="Book an appointment with Dr. Karan Singh Bais, a trusted General Physician at Chiranjeevi Clinic in Indore, Madhya Pradesh." />
+        <link rel="canonical" href={`${window.location.origin}/appointment`} />
+        <meta property="og:title" content="Book Your Appointment | Chiranjeevi Clinic" />
+        <meta property="og:description" content="Schedule your consultation with Dr. Karan Singh Bais, MD Medicine at Chiranjeevi Clinic." />
+        <meta property="og:url" content={`${window.location.origin}/appointment`} />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      </Helmet>
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <Link to="/" className="flex items-center gap-3">
