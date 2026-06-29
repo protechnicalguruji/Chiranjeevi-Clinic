@@ -45,9 +45,10 @@ export default function Hero() {
           >
             <div className="aspect-square bg-slate-200 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white ring-4 ring-primary/10">
               <img 
-                src="/src/assets/images/https://drive.google.com/file/d/19y8INKSzAbNEZI3DfKZMNoKQ55ymFIIP/view?usp=sharing" 
+                src="/src/assets/images/doctor_portrait_1782734335658.jpg" 
                 alt="Dr. Karan Singh Bais" 
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </motion.div>
