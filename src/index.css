@@ -10,10 +10,22 @@
   --color-accent: #2563eb;
   --color-background: #f8fafc;
   --color-text: #1e293b;
+
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-premium: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 @layer base {
   body {
-    @apply bg-background text-text font-sans;
+    @apply bg-background text-text font-sans selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+@layer components {
+  .premium-card {
+    @apply bg-white rounded-3xl border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-premium hover:-translate-y-1 hover:border-primary/20 p-8;
+  }
+  .premium-btn {
+    @apply shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300;
   }
 }

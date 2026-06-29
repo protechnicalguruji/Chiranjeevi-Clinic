@@ -17,15 +17,16 @@ export default function Services() {
         <h2 className="font-display text-4xl font-bold text-text text-center mb-16">Our Medical Services</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <motion.div 
+            <div 
               key={index}
-              whileHover={{ y: -5 }}
-              className="p-8 bg-background rounded-2xl border border-slate-100 hover:border-primary/20 transition-all"
+              className="premium-card"
             >
-              <service.icon className="text-primary mb-6" size={32} />
-              <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-              <p className="text-slate-600">Comprehensive and compassionate care for your specific health needs.</p>
-            </motion.div>
+              <div className="bg-secondary/10 w-fit p-4 rounded-2xl text-primary mb-6">
+                <service.icon size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+              <p className="text-slate-600 leading-relaxed">Comprehensive and compassionate care for your specific health needs.</p>
+            </div>
           ))}
         </div>
       </div>
