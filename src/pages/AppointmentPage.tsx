@@ -44,7 +44,6 @@ Thank you.`;
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "Dr. Karan Singh Bais",
-    "image": "https://ais-pre-ndkn2ios4csr5w7nzp7smn-893669360321.asia-east1.run.app/src/assets/images/doctor_portrait_1782728666510.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "31, Opposite Atal Dwar, Kila Maidan Road, Khasgi Ka Bagicha",
